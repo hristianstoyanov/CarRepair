@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarRepair</string>
+    <string name="facebook_app_id">930496960462315</string>
+    <string name="fb_login_protocol_scheme">fb930496960462315</string>
+    <string name="create_article">Нова статия</string>
+    <string name="logout">Изход</string>
+    <string name="article_title">Заглавие</string>
+    <string name="article_content">Съдържание</string>
+    <string name="upload_success">Upload Success!</string>
+    <string name="choice">Начало</string>
+</resources>

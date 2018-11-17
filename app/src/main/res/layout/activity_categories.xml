@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        tools:context=".Activities.Categories">
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Категории"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Engine"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="false"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryTextView"
+            app:srcCompat="@drawable/engine" />
+
+        <ImageView
+            android:id="@+id/Suspension"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/categoryTextView"
+            app:srcCompat="@drawable/suspension" />
+
+        <ImageView
+            android:id="@+id/Brakes"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/engineTextView"
+            app:srcCompat="@drawable/brakes" />
+
+        <ImageView
+            android:id="@+id/Electricity"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/suspensionTextView"
+            app:srcCompat="@drawable/battery" />
+
+        <ImageView
+            android:id="@+id/Interior"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brakesTextView"
+            app:srcCompat="@drawable/carinterior" />
+
+        <ImageView
+            android:id="@+id/Exterior"
+            android:layout_width="116dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/batteryTextView"
+            app:srcCompat="@drawable/carexterior" />
+
+        <TextView
+            android:id="@+id/engineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Двигател"
+            app:layout_constraintEnd_toEndOf="@+id/Engine"
+            app:layout_constraintStart_toStartOf="@+id/Engine"
+            app:layout_constraintTop_toBottomOf="@+id/Engine" />
+
+        <TextView
+            android:id="@+id/suspensionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Окачване"
+            app:layout_constraintEnd_toEndOf="@+id/Suspension"
+            app:layout_constraintStart_toStartOf="@+id/Suspension"
+            app:layout_constraintTop_toBottomOf="@+id/Suspension" />
+
+        <TextView
+            android:id="@+id/brakesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Спирачна система"
+            app:layout_constraintEnd_toEndOf="@+id/Brakes"
+            app:layout_constraintStart_toStartOf="@+id/Brakes"
+            app:layout_constraintTop_toBottomOf="@+id/Brakes" />
+
+        <TextView
+            android:id="@+id/batteryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Ел. система"
+            app:layout_constraintEnd_toEndOf="@+id/Electricity"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Electricity"
+            app:layout_constraintTop_toBottomOf="@+id/Electricity" />
+
+        <TextView
+            android:id="@+id/interiorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Интериор"
+            app:layout_constraintEnd_toEndOf="@+id/Interior"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/Interior"
+            app:layout_constraintTop_toBottomOf="@+id/Interior" />
+
+        <TextView
+            android:id="@+id/exteriorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Купе"
+            app:layout_constraintEnd_toEndOf="@+id/Exterior"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="@+id/Exterior"
+            app:layout_constraintTop_toBottomOf="@+id/Exterior" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
